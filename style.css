@@ -5,3 +5,8 @@ body {
   padding: 0px;
   font-family: "Noto Sans", sans-serif;
 }
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-template-rows: 100px auto 100px;
+}
