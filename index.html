@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Product Landing 1</title>
+    <link rel="stylesheet" href="nav.css" />
     <link rel="stylesheet" href="style.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap"
@@ -16,18 +17,32 @@
   </head>
   <body>
     <div class="container">
+      <!-- nav bar -->
+      <div class="topnav" id="myTopnav">
+        <a href="#home" class="active">The book series</a>
+        <a href="#news">Testimonials</a>
+        <a href="#contact">The Author</a>
+        <a href="#about">Free resources</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+      <!-- Header -->
       <div class="header">
         <h2>You don't know JavaScript</h2>
       </div>
+      <!-- Image -->
       <div class="image">
         <img src="book_cover.jpg" alt="" />
       </div>
+      <!-- text -->
       <div class="text">
         <p>Don't just drift through Javascript.</p>
         <p>Understand how Javascript works</p>
         <p>Start your journey through the bumpy side of Javascript</p>
         <button>order your copy now</button>
       </div>
+      <!-- footer -->
       <div class="footer">
         <p>The first ebook in the book series is absolutely free.</p>
         <button>Find out more about this offer</button>
