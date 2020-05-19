@@ -10,3 +10,15 @@ body {
   grid-template-columns: repeat(4, auto);
   grid-template-rows: 100px auto 100px;
 }
+.header {
+  grid-column-start: 1;
+  grid-column-end: -1;
+}
+.footer {
+  grid-column-start: 1;
+  grid-column-end: -1;
+  background-color: #011926;
+  color: white;
+  padding-top: 20px;
+  font-size: 12pt;
+}
