@@ -20,37 +20,48 @@
     />
   </head>
   <body>
+    <div class="topnav" id="myTopnav">
+      <a href="#header" class="active">The book series</a>
+      <a href="#image">Testimonials</a>
+      <a href="#text">The Author</a>
+      <a href="#contact">Contact Us</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
     <div class="container">
       <!-- nav bar -->
-      <div class="topnav" id="myTopnav">
-        <a href="#home" class="active">The book series</a>
-        <a href="#news">Testimonials</a>
-        <a href="#contact">The Author</a>
-        <a href="#about">Free resources</a>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-          <i class="fa fa-bars"></i>
-        </a>
-      </div>
+
       <!-- Header -->
-      <div class="header">
+      <div id="header" class="header">
         <h2>You don't know JavaScript</h2>
       </div>
       <!-- Image -->
-      <div class="image">
+      <div id="image" class="image">
         <img src="book_cover.jpg" alt="" />
       </div>
       <!-- text -->
-      <div class="text">
+      <div id="text" class="text">
         <p>Don't just drift through Javascript.</p>
         <p>Understand how Javascript works</p>
         <p>Start your journey through the bumpy side of Javascript</p>
         <button>order your copy now</button>
       </div>
       <!-- footer -->
-      <div class="footer">
+      <div id="contact" class="footer">
         <p>The first ebook in the book series is absolutely free.</p>
         <button>Find out more about this offer</button>
       </div>
     </div>
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+    </script>
   </body>
 </html>
